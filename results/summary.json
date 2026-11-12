@@ -1,0 +1,72 @@
+{
+  "mode": "full",
+  "earliest_on_record": {
+    "2023": 84,
+    "2021": 85,
+    "1409": 86
+  },
+  "bloom_trend_since_1950_days_per_decade": -1.0,
+  "bloom_change_point_last_year_before": 1953.0,
+  "jma_validation_max_abs_error_C_per_century": 0.0,
+  "n_years_discovery": 133,
+  "discovery_years": [
+    1890,
+    2026
+  ],
+  "blind_methods_correct_direction": 1,
+  "blind_methods_total": 7,
+  "time_ordered_T_Mar_to_Bloom": {
+    "lingam_bootstrap_p": 1.0,
+    "pc_fisherz": "T_Mar --> Bloom",
+    "fci": "T_Mar --> Bloom"
+  },
+  "time_ordered_GlobalT_to_Bloom_direct": {
+    "pc_fisherz": "no edge",
+    "fci": "no edge"
+  },
+  "cdnod_time_to_bloom_edge": false,
+  "faithfulness": {
+    "pc_sepset_GlobalT_T_Mar": [
+      [
+        "T_autumn",
+        "Bloom"
+      ]
+    ],
+    "corr_GlobalT_T_Mar": 0.672,
+    "corr_GlobalT_T_Mar_given_Bloom": 0.347,
+    "corr_GlobalT_Bloom_given_T_Feb_T_Mar": -0.012,
+    "anm_GlobalT_vs_T_Mar": "GlobalT -> T_Mar",
+    "lingam_time_ordered_GlobalT_to_T_Mar_sd": 0.497
+  },
+  "days_per_C_trend_free": {
+    "Oct (prev)": 0.837,
+    "Nov (prev)": 0.432,
+    "Dec (prev)": 0.009,
+    "Jan": 0.051,
+    "Feb": -0.617,
+    "Mar": -2.542
+  },
+  "attribution": {
+    "observed_shift_days": -10.8,
+    "march_days": -7.988,
+    "february_days": -1.885,
+    "autumn_brake_days": 4.105,
+    "all_temperature_days": -5.656,
+    "residual_days": -5.144,
+    "spring_only_days": -9.433,
+    "kyoto_FM_warming_C": 3.082,
+    "global_ONDJFM_warming_C": 1.117,
+    "urban_share_of_spring_accelerator_1929_2025": 0.299,
+    "autumn_step_after_1913_move_C": 0.735
+  },
+  "forecast_rmse_days": {
+    "Training-period mean (no weather)": 8.731,
+    "Linear, March temp": 2.041,
+    "Linear, Feb + Mar temp": 1.695,
+    "Linear, Oct-Mar temps (incl. brake)": 2.218,
+    "Ridge, all 10 features": 1.941,
+    "Random forest, all 10": 4.141,
+    "Gradient boosting, all 10": 3.822
+  },
+  "forecast_test_marches_warmer_than_training": "8 of 30"
+}

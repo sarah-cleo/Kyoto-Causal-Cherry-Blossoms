@@ -1,0 +1,8 @@
+candidate_cause,lingam_direct_sd,lingam_bootstrap_p_edge,lingam_total_effect_sd,pc_fisherz,pc_kci,fci
+GlobalT,0.0,0.36,-0.5975,no edge,no edge,no edge
+T_autumn,0.1323,0.67,-0.0995,no edge,no edge,no edge
+T_Jan,0.0,0.1133,-0.1355,no edge,no edge,no edge
+T_Feb,-0.2057,0.9033,-0.4075,T_Feb --> Bloom,T_Feb --> Bloom,T_Feb --> Bloom
+T_Mar,-0.8334,1.0,-0.8083,T_Mar --> Bloom,T_Mar --> Bloom,T_Mar --> Bloom
+P_Mar,0.0,0.1567,-0.2374,no edge,no edge,no edge
+Sun_Mar,0.0,0.14,-0.0929,no edge,no edge,no edge

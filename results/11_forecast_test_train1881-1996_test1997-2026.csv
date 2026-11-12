@@ -1,0 +1,8 @@
+model,rmse_days,mae_days,bias_obs_minus_pred
+Training-period mean (no weather),8.7308,7.7459,-7.7459
+"Linear, March temp",2.041,1.7346,-1.0449
+"Linear, Feb + Mar temp",1.695,1.447,-0.5591
+"Linear, Oct-Mar temps (incl. brake)",2.218,1.9631,-1.5272
+"Ridge, all 10 features",1.9414,1.6472,-0.6319
+"Random forest, all 10",4.1414,3.1626,-2.8272
+"Gradient boosting, all 10",3.8218,2.9793,-2.6707

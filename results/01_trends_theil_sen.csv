@@ -1,0 +1,4 @@
+series,days_per_decade,ci95_low,ci95_high
+bloom_doy_since_1881,-0.9459,-1.1111,-0.7692
+bloom_doy_since_1950,-1.0,-1.4286,-0.6061
+bloom_doy_since_1980,-1.7647,-2.7778,-0.8696

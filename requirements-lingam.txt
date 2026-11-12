@@ -1,0 +1,7 @@
+# Installed with --no-deps: lingam's dependency pygam pins an old SciPy
+# that has no wheel for current Python. The analysis runs fine on the
+# SciPy version in requirements.txt.
+lingam==1.13.0
+pygam==0.12.0
+psy==0.0.1
+semopy==2.3.11

@@ -1,0 +1,15 @@
+method,edge
+PC Fisher-z (tiers),GlobalT --> T_autumn
+PC Fisher-z (tiers),T_autumn --> T_Jan
+PC Fisher-z (tiers),T_Jan --> T_Feb
+PC Fisher-z (tiers),T_Feb --> Bloom
+PC Fisher-z (tiers),T_Mar --- P_Mar
+PC Fisher-z (tiers),T_Mar --> Bloom
+PC Fisher-z (tiers),P_Mar --- Sun_Mar
+FCI (tiers),GlobalT --> T_autumn
+FCI (tiers),T_autumn --> T_Jan
+FCI (tiers),T_Jan --> T_Feb
+FCI (tiers),T_Feb --> Bloom
+FCI (tiers),T_Mar o-o P_Mar
+FCI (tiers),T_Mar --> Bloom
+FCI (tiers),P_Mar o-o Sun_Mar

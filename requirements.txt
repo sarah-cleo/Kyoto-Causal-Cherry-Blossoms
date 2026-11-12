@@ -1,0 +1,14 @@
+# Tested with Python 3.13. Install in two steps (see README):
+#   pip install -r requirements.txt
+#   pip install --no-deps -r requirements-lingam.txt
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+statsmodels==0.15.0
+scikit-learn==1.9.1
+openpyxl==3.1.5
+causal-learn==0.1.4.8
+# imported by lingam's helper packages
+sympy==1.14.0
+autograd==1.9.1
+progressbar2==4.5.0

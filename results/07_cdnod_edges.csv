@@ -1,0 +1,19 @@
+test,edge,touches_time
+fisherz,GlobalT --> T_autumn,False
+fisherz,C_time --> GlobalT,True
+fisherz,T_autumn --> T_Jan,False
+fisherz,C_time --> T_autumn,True
+fisherz,T_Jan --> T_Feb,False
+fisherz,T_Feb --> Bloom,False
+fisherz,T_Mar --- P_Mar,False
+fisherz,T_Mar --> Bloom,False
+fisherz,P_Mar --- Sun_Mar,False
+kci,GlobalT --> T_autumn,False
+kci,C_time --> GlobalT,True
+kci,T_autumn --> T_Jan,False
+kci,C_time --> T_autumn,True
+kci,T_Jan --> T_Feb,False
+kci,T_Feb --> Bloom,False
+kci,T_Mar --- P_Mar,False
+kci,T_Mar --> Bloom,False
+kci,P_Mar --- Sun_Mar,False

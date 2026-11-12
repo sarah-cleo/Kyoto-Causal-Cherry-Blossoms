@@ -1,0 +1,242 @@
+{
+  "nodes": [
+    {
+      "id": "GlobalT",
+      "label": "Global temperature (Oct-Mar)",
+      "tier": 0,
+      "group": "driver"
+    },
+    {
+      "id": "Urban",
+      "label": "Urban heat island",
+      "tier": 0,
+      "group": "latent"
+    },
+    {
+      "id": "T_autumn",
+      "label": "Oct-Dec temperature (prev. year)",
+      "tier": 1,
+      "group": "climate"
+    },
+    {
+      "id": "T_Jan",
+      "label": "January temperature",
+      "tier": 2,
+      "group": "climate"
+    },
+    {
+      "id": "T_Feb",
+      "label": "February temperature",
+      "tier": 3,
+      "group": "climate"
+    },
+    {
+      "id": "T_Mar",
+      "label": "March temperature",
+      "tier": 4,
+      "group": "climate"
+    },
+    {
+      "id": "P_Mar",
+      "label": "March precipitation",
+      "tier": 4,
+      "group": "climate"
+    },
+    {
+      "id": "Sun_Mar",
+      "label": "March sunshine",
+      "tier": 4,
+      "group": "climate"
+    },
+    {
+      "id": "Bloom",
+      "label": "Full-bloom date",
+      "tier": 5,
+      "group": "outcome"
+    },
+    {
+      "id": "Residual",
+      "label": "Unexplained trend",
+      "tier": 5,
+      "group": "latent"
+    }
+  ],
+  "edges": [
+    {
+      "source": "GlobalT",
+      "target": "T_autumn",
+      "kind": "direct",
+      "lingam_coef_sd": 0.7926,
+      "lingam_bootstrap_p": 1.0,
+      "pc_fisherz": "GlobalT --> T_autumn",
+      "fci": "GlobalT --> T_autumn"
+    },
+    {
+      "source": "GlobalT",
+      "target": "T_Jan",
+      "kind": "direct",
+      "lingam_coef_sd": 0.2862,
+      "lingam_bootstrap_p": 0.7,
+      "pc_fisherz": "no edge",
+      "fci": "no edge"
+    },
+    {
+      "source": "T_autumn",
+      "target": "T_Jan",
+      "kind": "direct",
+      "lingam_coef_sd": 0.4068,
+      "lingam_bootstrap_p": 0.94,
+      "pc_fisherz": "T_autumn --> T_Jan",
+      "fci": "T_autumn --> T_Jan"
+    },
+    {
+      "source": "GlobalT",
+      "target": "T_Feb",
+      "kind": "direct",
+      "lingam_coef_sd": 0.2146,
+      "lingam_bootstrap_p": 0.6733,
+      "pc_fisherz": "no edge",
+      "fci": "no edge"
+    },
+    {
+      "source": "T_autumn",
+      "target": "T_Feb",
+      "kind": "direct",
+      "lingam_coef_sd": 0.2161,
+      "lingam_bootstrap_p": 0.6533,
+      "pc_fisherz": "no edge",
+      "fci": "no edge"
+    },
+    {
+      "source": "T_Jan",
+      "target": "T_Feb",
+      "kind": "direct",
+      "lingam_coef_sd": 0.3005,
+      "lingam_bootstrap_p": 0.9267,
+      "pc_fisherz": "T_Jan --> T_Feb",
+      "fci": "T_Jan --> T_Feb"
+    },
+    {
+      "source": "GlobalT",
+      "target": "T_Mar",
+      "kind": "direct",
+      "lingam_coef_sd": 0.4974,
+      "lingam_bootstrap_p": 0.9667,
+      "pc_fisherz": "no edge",
+      "fci": "no edge"
+    },
+    {
+      "source": "T_Feb",
+      "target": "T_Mar",
+      "kind": "direct",
+      "lingam_coef_sd": 0.3075,
+      "lingam_bootstrap_p": 0.9633,
+      "pc_fisherz": "no edge",
+      "fci": "no edge"
+    },
+    {
+      "source": "GlobalT",
+      "target": "P_Mar",
+      "kind": "direct",
+      "lingam_coef_sd": -0.2735,
+      "lingam_bootstrap_p": 0.3167,
+      "pc_fisherz": "no edge",
+      "fci": "no edge"
+    },
+    {
+      "source": "T_autumn",
+      "target": "P_Mar",
+      "kind": "direct",
+      "lingam_coef_sd": -0.2215,
+      "lingam_bootstrap_p": 0.3967,
+      "pc_fisherz": "no edge",
+      "fci": "no edge"
+    },
+    {
+      "source": "T_Mar",
+      "target": "P_Mar",
+      "kind": "direct",
+      "lingam_coef_sd": 0.6456,
+      "lingam_bootstrap_p": 0.5067,
+      "pc_fisherz": "T_Mar --- P_Mar",
+      "fci": "T_Mar o-o P_Mar"
+    },
+    {
+      "source": "T_autumn",
+      "target": "Sun_Mar",
+      "kind": "direct",
+      "lingam_coef_sd": -0.2352,
+      "lingam_bootstrap_p": 0.5033,
+      "pc_fisherz": "no edge",
+      "fci": "no edge"
+    },
+    {
+      "source": "P_Mar",
+      "target": "Sun_Mar",
+      "kind": "direct",
+      "lingam_coef_sd": -0.3841,
+      "lingam_bootstrap_p": 0.8267,
+      "pc_fisherz": "P_Mar --- Sun_Mar",
+      "fci": "P_Mar o-o Sun_Mar"
+    },
+    {
+      "source": "T_autumn",
+      "target": "Bloom",
+      "kind": "direct",
+      "lingam_coef_sd": 0.1323,
+      "lingam_bootstrap_p": 0.67,
+      "pc_fisherz": "no edge",
+      "fci": "no edge",
+      "days_per_C_trend_free": 0.8375
+    },
+    {
+      "source": "T_Feb",
+      "target": "Bloom",
+      "kind": "direct",
+      "lingam_coef_sd": -0.2057,
+      "lingam_bootstrap_p": 0.9033,
+      "pc_fisherz": "T_Feb --> Bloom",
+      "fci": "T_Feb --> Bloom",
+      "days_per_C_trend_free": -0.6169
+    },
+    {
+      "source": "T_Mar",
+      "target": "Bloom",
+      "kind": "direct",
+      "lingam_coef_sd": -0.8334,
+      "lingam_bootstrap_p": 1.0,
+      "pc_fisherz": "T_Mar --> Bloom",
+      "fci": "T_Mar --> Bloom",
+      "days_per_C_trend_free": -2.5418
+    },
+    {
+      "source": "Urban",
+      "target": "T_autumn",
+      "kind": "latent",
+      "evidence": "JMA 1929-2025: Kyoto Tmin +3.9 vs rural +2.1 °C/100yr; Tmax equal"
+    },
+    {
+      "source": "Urban",
+      "target": "T_Feb",
+      "kind": "latent",
+      "evidence": "JMA 1929-2025: Kyoto Tmin +3.9 vs rural +2.1 °C/100yr; Tmax equal"
+    },
+    {
+      "source": "Urban",
+      "target": "T_Mar",
+      "kind": "latent",
+      "evidence": "JMA 1929-2025: Kyoto Tmin +3.9 vs rural +2.1 °C/100yr; Tmax equal"
+    },
+    {
+      "source": "Residual",
+      "target": "Bloom",
+      "kind": "latent",
+      "evidence": "about 5 days of the shift not explained once the autumn brake is included"
+    }
+  ],
+  "n_years": 133,
+  "years": [
+    1890,
+    2026
+  ]
+}
